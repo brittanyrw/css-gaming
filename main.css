@@ -69,7 +69,6 @@ input {
   background-size: contain;
   animation-direction: normal;
   animation-iteration-count: infinite;
-  appearance: none;
   animation-timing-function: linear;
   flex-shrink: 0;
   transition: 0.5s;
