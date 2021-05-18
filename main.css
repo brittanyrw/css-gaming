@@ -1,0 +1,116 @@
+/*GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 30px;
+  border: 7px solid #2f3035;
+}
+
+main {
+  width: 100%;
+  padding: 30px;
+}
+
+header {
+  background-color: #fdb62f;
+  border-bottom: 7px solid #2f3035;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Audiowide", cursive;
+  font-size: 50px;
+  color: #2f3035;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-family: Verdana;
+  margin: 0;
+  padding: 10px 0;
+  color: #2f3035;
+}
+
+.game {
+  background-color: #69b9e7;
+  width: 100%;
+}
+
+/*GAME ITEMS */
+
+.game-items {
+  height: 500px;
+  width: 100%;
+  max-width: 700px;
+  border: 7px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 5px 5px 0 #2f3035;
+  background-color: #2f3035;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+input {
+  width: 100px;
+  height: 100px;
+  cursor: crosshair;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  appearance: none;
+  animation-timing-function: linear;
+  flex-shrink: 0;
+  transition: 0.5s;
+}
+
+/*SCORE */
+
+.score {
+  position: absolute;
+  bottom: 0;
+  background-color: #f85542;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-family: Verdana;
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(600px);
+  }
+}
+
+/* GAME ITEM IMAGES */
+
+/* input.floppy {
+  background-image: url(imgs/floppy.png);
+}
+
+input.gamepad {
+  background-image: url(imgs/gamepad.png);
+}
+
+input.portable-console {
+  background-image: url(imgs/portable-console.png);
+}
+
+input.tv {
+  background-image: url(imgs/tv.png);
+} */
